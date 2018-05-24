@@ -94,7 +94,7 @@ public class MujPanel extends Thread{
      
       textarea = new JTextArea();
       textarea.setOpaque(false);
-      textarea.setBounds(0,vyska/2,vyska/2,200);
+      textarea.setBounds(0,250,300,300);
       textarea.setEditable(false);
       textarea.setVisible(true);
       textarea.setFont(new Font("Arial",Font.PLAIN,18));
