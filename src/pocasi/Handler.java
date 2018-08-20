@@ -4,6 +4,10 @@
  * and open the template in the editor.
  */
 package pocasi;
+
+import javax.swing.JLabel;
+import javax.swing.JTextArea;
+
 /**
  *
  * @author bohou
@@ -18,33 +22,45 @@ public class Handler {
     public Okno getOkno() {
         return okno;
     }
+    
 
     public void setOkno(Okno okno) {
         this.okno = okno;
     }
 
     public WeatherByCity getWeatherByCity(){
-        return okno.getMujPanel().getWeatherByCity();
+        return okno.getPanelSearch().getWeatherByCity();
     }
     
     public String getWeatherByCityIcon(){
-        return okno.getMujPanel().getWeatherByCity().getWeatherIcon();
+        return okno.getPanelSearch().getWeatherByCity().getWeatherIcon();
     }
     
     public WeatherForecast getWeatherForecast(){
-        return okno.getMujPanel().getWeatherForecast();
+        return okno.getPanelSearch().getWeatherForecast();
     }
     
     public String getWeatherForecastIcon(int x){
-    return okno.getMujPanel().getWeatherForecast().getArrayValue(x,3);
+        return okno.getPanelSearch().getWeatherForecast().getArrayValue(x,3);
     }
     
-    public int getSirka(){
-    return okno.getSirka();
+    public JLabel getLabel(){
+        return okno.getPanelWBC().getLabel();
     }
     
-    public int getVyska(){
-    return okno.getVyska();
-    } 
-     
+    public JTextArea getTextArea(){
+        return okno.getPanelWBC().getTextarea();
+    }
+    
+    public JLabel getLabel1(){
+        return okno.getPanelWF().getLabel1();
+    }
+    
+    public JLabel getLabel2(){
+        return okno.getPanelWF().getLabel2();
+    }
+    
+    public JLabel getLabel3(){
+        return okno.getPanelWF().getLabel3();
+    }
 }
