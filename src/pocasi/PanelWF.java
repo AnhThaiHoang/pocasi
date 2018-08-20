@@ -6,10 +6,8 @@
 package pocasi;
 
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics;
-import java.awt.GridBagLayout;
 import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -44,7 +42,8 @@ public class PanelWF {
         panelWF.setOpaque(false);
         panelWF.setBackground(new Color(0,0,0,50));
         panelWF.setVisible(false);
-        panelWF.setPreferredSize(new Dimension(750,200));
+        panelWF.setBounds(0, 0, 750, 200);
+       // panelWF.setPreferredSize(new Dimension(750,200));
         
         
         font = new Font("Arial",Font.PLAIN,18);

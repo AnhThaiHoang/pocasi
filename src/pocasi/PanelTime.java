@@ -5,7 +5,6 @@
  */
 package pocasi;
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Point;
@@ -45,7 +44,8 @@ public class PanelTime extends Thread{
         super.paintComponent(g);
     }
 };
-      panelTime.setPreferredSize(new Dimension(130, 40));
+//      panelTime.setPreferredSize(new Dimension(130, 40));
+      panelTime.setBounds(0, 0, 130, 40);
       panelTime.setOpaque(false);
       panelTime.setVisible(false);
       panelTime.setBackground(new Color(0,0,0,50));

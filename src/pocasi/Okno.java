@@ -15,8 +15,7 @@ import javax.swing.JPanel;
 
 
 public class Okno extends JFrame{
-   private JFrame frame;
-   private JPanel backgroundImageOnPanel;
+   private JFrame frame;;
    private PanelTime panelTime;
    private PanelSearch panelSearch;
    private PanelWBC panelWBC;
@@ -39,16 +38,13 @@ public class Okno extends JFrame{
      panelWF = new PanelWF(handler);
      panelTime.start();
      
-
-     backgroundImageOnPanel = new JPanel();
-     backgroundImageOnPanel.setOpaque(false);
-     backgroundImageOnPanel.setLayout(new GridBagLayout());
-     frame.setContentPane(backgroundImageOnPanel);
-     
+     frame.getContentPane().setLayout(null);
      frame.add(panelTime.getPanelTime());
      frame.add(panelSearch.getPanelSearch());
      frame.add(panelWBC.getPanelBackground());
      frame.add(panelWF.getPanelWF());
+     
+     
      }     
 
     public PanelTime getPanelTime() {

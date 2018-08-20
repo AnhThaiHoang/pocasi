@@ -9,7 +9,6 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics;
-import java.awt.GridBagLayout;
 import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -46,7 +45,7 @@ public class PanelWBC {
         panelWBC.setOpaque(false);
         panelWBC.setBackground(new Color(0,0,0,50));
         panelWBC.setVisible(false);
-        panelWBC.setPreferredSize(new Dimension(250,460));
+        panelWBC.setBounds(0, 0, 250, 460);
        
         
         font = new Font("Arial",Font.PLAIN,18);

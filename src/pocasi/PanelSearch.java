@@ -6,10 +6,8 @@
 package pocasi;
 
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics;
-import java.awt.GridBagLayout;
 import java.awt.Image;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
@@ -56,7 +54,7 @@ public class PanelSearch {
     }
 };    
         
-        panelSearch.setPreferredSize(new Dimension(250,50));
+        panelSearch.setBounds(0, 0, 250,50);
         panelSearch.setOpaque(false); 
         panelSearch.setVisible(false);
         panelSearch.setBackground(new Color(0,0,0,50));
